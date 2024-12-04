@@ -16,6 +16,7 @@ The file *data_analysis_query.sql* contains SQL queries to answer the following 
 ### Relevant Files
 
 SQL files:
++ EmployeeSQL/ERD.png *(PNG image of Entity Relationship Diagram for the database)*
 + EmployeeSQL/schema.sql *(PostgreSQL schema to create database structure)*
 + EmployeeSQL/data_analysis_query.sql *(Queries to answer the above questions)*
 
