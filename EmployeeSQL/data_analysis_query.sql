@@ -16,7 +16,7 @@ SELECT b.dept_no "Department #", c.dept_name "Department", a.emp_no "Employee #"
 FROM employees AS a
 RIGHT JOIN department_manager AS b
 	ON a.emp_no = b.emp_no
-INNER JOIN department AS c
+INNER JOIN departments AS c
 	ON b.dept_no = c.dept_no;
 
 -- 4. List the department number for each employee along with that employee’s employee number, last name, first name, and department name (2 points)
@@ -24,7 +24,7 @@ SELECT b.dept_no "Department #", a.emp_no "Employee #", a.last_name "Last Name",
 FROM employees AS a
 RIGHT JOIN department_employee AS b
 	ON a.emp_no = b.emp_no
-INNER JOIN department AS c
+INNER JOIN departments AS c
 	ON b.dept_no = c.dept_no;
 
 -- 5. List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B (2 points)
@@ -37,7 +37,7 @@ SELECT a.emp_no "Employee #", a.last_name "Last Name", a.first_name "First Name"
 FROM employees AS a
 RIGHT JOIN department_employee AS b
 	ON a.emp_no = b.emp_no
-INNER JOIN department AS c
+INNER JOIN departments AS c
 	ON b.dept_no = c.dept_no
 WHERE c.dept_name = 'Sales';
 
@@ -46,7 +46,7 @@ SELECT a.emp_no "Employee #", a.last_name "Last Name", a.first_name "First Name"
 FROM employees AS a
 RIGHT JOIN department_employee AS b
 	ON a.emp_no = b.emp_no
-INNER JOIN department AS c
+INNER JOIN departments AS c
 	ON b.dept_no = c.dept_no
 WHERE c.dept_name = 'Sales' OR c.dept_name = 'Development';
 
